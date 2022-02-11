@@ -35,7 +35,9 @@ url = 'https://api.exchangerate-api.com/v4/latest/USD'
 converter = LiveCurrencyConverter(url)
 
 #test print
-print(converter.convert('INR','USD',100))
+result = converter.convert('EUR','USD',100)
+string = str(result)
+print( "100 EURO is worth " + string + " USD")
 
 
 
